@@ -8,7 +8,7 @@ type LikeButtonProps = {
 export default function LikeButton({ initialLikes }: LikeButtonProps) {
   const [likes, setLikes] = useState<number>(initialLikes)
   return (
-    <button onClick={() => setLikes((l) => l + 1)} className="px-3 py-1 rounded bg-red-100 hover:bg-red-200">
+    <button aria-label="Like this course" onClick={() => setLikes((l) => l + 1)} className="like-button">
       ❤ {likes}
     </button>
   )

@@ -1,3 +1,3 @@
 export default function Loading() {
-  return <p>Loading course…</p>
+  return <p className="loading-text">Loading course...</p>
 }
